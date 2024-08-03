@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "patriciaparish/rialto": "^1.4.1",
+        "patriciaparish/rialto": "^1.4.2",
         "psr/log": "^3.0",
         "vierbergenlars/php-semver": "^3.0.2"
     },
