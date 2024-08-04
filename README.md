@@ -80,7 +80,7 @@ To use puppeteer-extra plugins add them to your project:
 
 ```shell
 npm i puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
-``
+```
 
 Edit src/PuppeteerConnectionDelegate.js, Change line 31 'instruction.setDefaultResource(puppeteer);' to below
 
