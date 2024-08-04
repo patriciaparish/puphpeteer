@@ -82,10 +82,9 @@ To use puppeteer-extra plugins add them to your project:
 npm i puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
 ``
 
-Then override js inclusion with js_extra option
+Edit src/PuppeteerConnectionDelegate.js, Change line 31 'instruction.setDefaultResource(puppeteer);' to below
 
 ```js
-// Edit src/PuppeteerConnectionDelegate.js, Change line 31 'instruction.setDefaultResource(puppeteer);' to below
 if (this.options.js_extra) {
     eval(this.options.js_extra);
 } else {
@@ -93,6 +92,8 @@ if (this.options.js_extra) {
     instruction.setDefaultResource(puppeteer);
 }
 ```
+
+Then override js inclusion with js_extra option
 
 ```php
     $puppeteer = new Puppeteer([
