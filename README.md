@@ -73,7 +73,20 @@ Install it with these two command lines:
 ```shell
 composer require patriciaparish/puphpeteer
 npm install @nesk/puphpeteer
-npm i puppeteer
+npm i puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
+```
+
+Then override js inclusion with js_extra option
+
+```php
+    $puppeteer = new Puppeteer([
+        'js_extra' => /** @lang JavaScript */ "
+            const puppeteer = require('puppeteer-extra');
+            const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+            puppeteer.use(StealthPlugin());
+            instruction.setDefaultResource(puppeteer);
+        "
+    ]);
 ```
 
 ## Notable differences between PuPHPeteer and Puppeteer
