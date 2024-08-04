@@ -28,7 +28,12 @@ class PuppeteerConnectionDelegate extends ConnectionDelegate
      * @inheritdoc
      */
     async handleInstruction(instruction, responseHandler, errorHandler) {
-        instruction.setDefaultResource(puppeteer);
+        if (this.options.js_extra) {
+            eval(this.options.js_extra);
+        } else {
+            const puppeteer = require('puppeteer');
+            instruction.setDefaultResource(puppeteer);
+        }
 
         let value = null;
 
