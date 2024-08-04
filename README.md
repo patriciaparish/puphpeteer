@@ -77,6 +77,7 @@ npm install @nesk/puphpeteer
 
 ### Puppeteer plugins
 To use puppeteer-extra plugins add them to your project:
+
 ```shell
 npm i puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
 ``
