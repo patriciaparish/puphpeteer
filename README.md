@@ -1,4 +1,4 @@
-# 🚨 This project is not maintained anymore
+# 🚨 This project can integrate for Project use Laravel 10, 11
 
 As I write these lines, it's been nearly two years since the latest release of PuPHPeteer. Despite the enthusiasm around this project, I no longer have the motivation to support its development, mainly because it never really had any use to me. So its time to be honest with you, PuPHPeteer is no longer maintained.
 
